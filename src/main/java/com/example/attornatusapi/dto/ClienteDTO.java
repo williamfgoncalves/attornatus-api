@@ -1,4 +1,9 @@
 package com.example.attornatusapi.dto;
 
-public class ClienteDTO {
+import java.time.LocalDate;
+
+public record ClienteDTO(String nome, LocalDate dataNascimento){
+    public ClienteDTO() {
+        this(null, null);
+    }
 }
